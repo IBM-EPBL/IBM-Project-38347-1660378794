@@ -10,6 +10,9 @@ Retail inventory management is the process of ensuring you carry merchandise tha
 - Deployment Of App In IBM Cloud
 - ✨Development Phase ✨
 
+## Website IP Address
+- This is a demo website has been hosted in the IBM Kubernetes Cluster http://159.122.177.251:31090
+
 ## Features
 
 - Manage your inventory with the help of serverless architecture.
