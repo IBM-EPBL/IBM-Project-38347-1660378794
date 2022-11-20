@@ -11,7 +11,7 @@ Retail inventory management is the process of ensuring you carry merchandise tha
 - ✨Development Phase ✨
 
 ## Website IP Address
-- This is a demo website has been hosted in the IBM Kubernetes Cluster http://159.122.177.251:31090
+- This is a demo website has been hosted using IBM Kubernetes Cluster http://159.122.177.251:31090
 
 ## Features
 
