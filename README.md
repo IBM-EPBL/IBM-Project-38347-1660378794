@@ -102,6 +102,12 @@ port 3000 of the Docker (or whatever port was exposed in the Dockerfile):
 
 
 ## Snap Shots
+![Screenshot (144)](https://user-images.githubusercontent.com/89476967/203581478-be3cd585-5834-4115-a706-60dc609a22a6.png)
+![Screenshot (145)](https://user-images.githubusercontent.com/89476967/203582316-95474b54-dab0-4c46-b137-6750f5232f97.png)
+![Screenshot (140)](https://user-images.githubusercontent.com/89476967/203581563-ace06234-9cbd-4f7e-8f02-4ffba9886621.png)
+![Screenshot (141)](https://user-images.githubusercontent.com/89476967/203581587-bd718fcf-822e-45df-b88f-c999b4458754.png)
+![Screenshot (142)](https://user-images.githubusercontent.com/89476967/203581624-1865030d-b9fd-44bb-83cd-0a8f5e1388f1.png)
+![Screenshot (143)](https://user-images.githubusercontent.com/89476967/203582378-079929e9-c3fb-4112-97a9-123eecab3906.png)
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
