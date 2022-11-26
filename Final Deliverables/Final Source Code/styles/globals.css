@@ -1,0 +1,404 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* html {
+        color-scheme: dark;
+    } */
+  body {
+    color: white;
+    /* background: black; */
+  }
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2cac4;
+  /* background-color: #d2cac4; */
+}
+
+.page {
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  background-color: #f1f4e3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  /* padding: 1%; */
+}
+
+a {
+  text-decoration: none;
+  /* color: #cecece; */
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Red Hat Mono", monospace;
+}
+
+.left {
+  padding-left: 2%;
+}
+
+.page img {
+  height: 2.3rem;
+  margin: 10px 0 0 50px;
+}
+
+.navbar {
+  width: 100%;
+  height: 10%;
+  position: sticky;
+  background-color: white;
+}
+
+.navbar ul {
+  display: flex;
+  float: right;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 15px 15px;
+}
+
+.navbar ul li {
+  padding: 0 15px 0 15px;
+}
+
+.right {
+  background-color: #e38931;
+  position: absolute;
+  width: 55%;
+  height: 90%;
+  left: 45%;
+  border-radius: 100% 0 0 0;
+}
+
+.logo h1 {
+  font-family: "Red Hat Mono", monospace;
+  color: #534935;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-10%, -40%);
+  width: 350px;
+  font-size: 3rem;
+}
+
+.para {
+  color: #551a8b;
+  width: 45%;
+  margin-top: 2.5%;
+  font-size: 1.1rem;
+  font-family: monospace;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+.logo p {
+  font-family: "Red Hat Mono", monospace;
+  color: #534935;
+  position: absolute;
+  top: 58%;
+  left: 7%;
+  transform: translate(-7%, -58%);
+  font-size: 12px;
+}
+
+button {
+  position: absolute;
+  top: 60%;
+  font-size: 1rem;
+  /* left: 5%; */
+  transform: translate(-5%, -65%);
+  border-radius: 15px;
+  background-color: #e38931;
+  width: 125px;
+  height: 35px;
+  color: white;
+  border-style: none;
+}
+
+button:hover {
+  box-shadow: 0 5px 15px #e38931;
+  cursor: pointer;
+}
+
+.right img {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  height: 20rem;
+  transform: translate(-5%, -5%);
+  transform: rotate(-20deg);
+}
+
+.right ul {
+  display: flex;
+  float: right;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 15px 15px;
+  top: 50%;
+  left: 60%;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.right ul li {
+  margin: 8px;
+  color: white;
+  font-family: "Red Hat Mono", monospace;
+  transform: uppercase;
+  font-size: 10px;
+}
+
+.holder {
+  color: #777;
+  font-family: monospace;
+  margin-top: 0.6rem;
+}
+
+.currentOrders {
+  /* margin-top: 50px; */
+  height: 274px;
+  overflow-y: scroll;
+  width: 100%;
+  /* margin-left: 5rem; */
+}
+
+.design-holder {
+  background-color: #faa43a;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.loginHolder {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  z-index: 101;
+}
+
+.screen {
+  background: linear-gradient(90deg, #e4ad76, #e38931);
+  position: relative;
+  height: 555px;
+  width: 360px;
+  box-shadow: 0px 0px 24px #e38931;
+}
+
+.screen__content {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+
+.screen__background {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+}
+
+.screen__background__shape {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.screen__background__shape1 {
+  height: 520px;
+  width: 520px;
+  background: #fff;
+  top: -50px;
+  right: 120px;
+  border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+  height: 220px;
+  width: 220px;
+  background: #e38931;
+  top: -172px;
+  right: 0;
+  border-radius: 32px;
+}
+
+.screen__background__shape3 {
+  height: 540px;
+  width: 190px;
+  background: linear-gradient(270deg, #e4913e, #e38931);
+  top: -24px;
+  right: 0;
+  border-radius: 32px;
+}
+
+.screen__background__shape4 {
+  height: 400px;
+  width: 200px;
+  background: #e38931;
+  top: 420px;
+  right: 50px;
+  border-radius: 60px;
+}
+
+.login {
+  width: 320px;
+  padding: 30px;
+  padding-top: 66px;
+}
+
+.login__field {
+  padding: 20px 0px;
+  position: relative;
+}
+
+.login__icon {
+  position: absolute;
+  top: 30px;
+  color: #7875b5;
+}
+
+.login__input {
+  border: none;
+  border-bottom: 2px solid #d1d1d4;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: #6a679e;
+}
+
+.login__submit {
+  background: #fff;
+  font-size: 14px;
+  /* margin-top: 30px; */
+  padding: 16px 20px;
+  border-radius: 26px;
+  border: 1px solid #d4d3e8;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: #4c489d;
+  box-shadow: 0px 2px 2px #5c5696;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 120px;
+  margin-bottom: 50px;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+  border-color: #6a679e;
+  outline: none;
+}
+
+.button__icon {
+  font-size: 24px;
+  margin-left: auto;
+  color: #7875b5;
+}
+
+.switch {
+  font-family: Raleway, sans-serif;
+  margin-top: 20px;
+  padding-left: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.loader-holder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #353c466a;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  align-items: center;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
